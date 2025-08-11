@@ -1,6 +1,6 @@
-# 🧩 T4 Add Toolbar Buttons (Chrome edition)
+# 🧩 T4 Add Toolbar Buttons (Firefox edition)
 
-This Chrome extension adds extra buttons to the Terminalfour (T4 v8) toolbar, just to the right of the Site Structure icon. These buttons link directly to useful features such as the **Media Library**, helping web editors work faster and more efficiently.
+This Firefox add-on adds extra buttons to the Terminalfour (T4 v8) toolbar, just to the right of the Site Structure icon. These buttons link directly to useful features such as the **Media Library**, helping web editors work faster and more efficiently.
 
 ---
 
@@ -14,14 +14,12 @@ This Chrome extension adds extra buttons to the Terminalfour (T4 v8) toolbar, ju
 
 ## ✅ Compatible browsers
 
-This extension has been tested successfully in the following Chromium-based browsers on Windows 11:
+This extension has been tested successfully in the following Gecko-based browsers on Windows 11:
 
-- [Google Chrome](https://www.google.com/chrome/)
-- [Brave](https://brave.com/)
-- [Opera](https://www.opera.com/)
-- [Vivaldi](https://vivaldi.com/)
+- [Mozilla Firefox](https://www.firefox.com/)
+- [Mozilla Firefox Developer Edition](https://www.firefox.com/en-GB/channel/desktop/developer/)
 
-A Firefox/Gecko-compatible version is in progress.
+A [Chrome/Chromium-compatible version is available](https://github.com/garethjmsaunders/t4-add-toolbar-buttons-chrome).
 
 ---
 
@@ -36,13 +34,19 @@ A Firefox/Gecko-compatible version is in progress.
 
 ## 📦 How to install
 
-1. Download the zip file (Click the green `<> Code` button and select Download ZIP.)
-2. Unzip the extension folder to a folder location where you want to store this.
-3. Open your browser and visit `chrome://extensions`.
-4. Turn on **Developer mode** (top right).
-5. Click **Load unpacked**.
-6. Select the unzipped folder.
-7. The toolbar button should now appear on your browser toolbar.
+1. Download the zip file from GitHub. (Click the green `<> Code` button and select Download ZIP.)
+2. Unzip the extension files.
+3. You just need the `t4-add-toolbar-buttons-firefox-1.10.1.xpi` file. (An `XPI` file is a special zip file that has been signed by Mozilla for distributing add-ons.)
+4. Open your browser and visit `about:addons`.
+5. Select the ⚙️ cog icon (top right).
+6. Select **Install Add-on From File...**.
+7. Select your unzipped `XPI` file.
+8. Select **Open**.
+9. A dialog box will appear with details about the add-on. If you want to allow the extension to run in private windows, click the checkbox.
+10. Select **Add**.
+11. Another dialog box will appear. Check the box to pin the extension to the toolbar.
+12. Select **OK**.
+13. The toolbar button should now appear on your browser toolbar.
 
 ---
 
@@ -50,24 +54,14 @@ A Firefox/Gecko-compatible version is in progress.
 
 You can choose which buttons appear by visiting the extension’s **Options panel**.
 
-### 🔧 Ways to open the options:
-
 ![Options screen allowing users to select which additional toolbar buttons to show](options.png "Options screen")
 
-1. **Right-click the T4 icon** 🖱️ in the browser toolbar and select **Options**.
-2. Select which toolbar buttons you wish to show.
-3. Click Save.
-
-> 💡 Changes take effect immediately — just refresh your T4 browser tab.
-
-**or**
-
-1. Go to `chrome://extensions`.
-2. Find **T4 Add Toolbar Buttons**.
-3. Click **Details**.
-4. Click **Extension options**.
+1. Right-click the T4 add-on icon on the toolbar.
+2. Select **Manage Extension**.
+3. Select the three-horizontal-dots (**...**).
+4. Select **Options**.
 5. Select which toolbar buttons you wish to show.
-6. Click Save.
+6. Select **Save**.
 
 > 💡 Changes take effect immediately — just refresh your T4 browser tab.
 

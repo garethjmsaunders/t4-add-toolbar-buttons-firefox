@@ -1,9 +1,11 @@
+const API = typeof browser !== 'undefined' ? browser : chrome;
+
 (function injectT4ToolbarIcons() {
-  /*                name
-                    link
-                    font awesome icon
-                    label
-                    tooltip
+  /* name
+     link
+     font awesome icon
+     label
+     tooltip
   */
   const buttonDefinitions = {
     media:        [
@@ -45,7 +47,7 @@
   };
 
 
-  chrome.storage.sync.get(['t4toolbar'], (data) => {
+  API.storage.sync.get(['t4toolbar'], (data) => {
     const settings = data.t4toolbar || {};
 
     const buttonsToInject = Object.entries(buttonDefinitions)

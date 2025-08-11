@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "T4 Add Toolbar Buttons",
-  "version": "1.9.1",
+  "version": "1.10.1",
   "description": "Adds configurable toolbar icons after the Site Structure icon in Terminalfour.",
   "icons": {
     "16": "icon-16.png",
@@ -28,5 +28,11 @@
   "options_page": "options.html",
   "action": {
     "default_title": "T4 Add Toolbar Buttons"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "t4-toolbar@gjms1",   // any unique string or a GUID
+      "strict_min_version": "126.0"
+    }
   }
 }

@@ -1,3 +1,4 @@
+const API = typeof browser !== 'undefined' ? browser : chrome;
 const form = document.getElementById('settings-form');
 const status = document.getElementById('status');
 
@@ -20,7 +21,7 @@ form.addEventListener('submit', (event) => {
       settings[input.name] = input.checked;
     }
   }
-  chrome.storage.sync.set({ t4toolbar: settings }, () => {
+  API.storage.sync.set({ t4toolbar: settings }, () => {
     status.textContent = 'Settings saved.';
     setTimeout(() => (status.textContent = ''), 2000);
   });

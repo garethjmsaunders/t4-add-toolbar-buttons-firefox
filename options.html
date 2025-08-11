@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>T4 Toolbar Icon Settings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+    input[type="checkbox"] {
+      transform: scale(1.5); /* Increase size to 150% */
+      margin-right: 0.5rem;  /* Add space between checkbox and label text */
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0;
+    }
+    button {
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>T4 Toolbar Icon Settings</h1>
+  <p>Select which new toolbar buttons you wish to display to the right of the Site Structure button.</p>
+<form id="settings-form">
+  <label>
+    <input type="checkbox" name="media" />
+    <i class="fa fa-image"></i> Media Library
+  </label><br />
+  <label>
+    <input type="checkbox" name="mediaconfig" />
+    <i class="fa fa-sliders"></i> Media Configuration
+  </label><br />
+  <label>
+    <input type="checkbox" name="user" />
+    <i class="fa fa-user"></i> User Management
+  </label><br />
+  <label>
+    <input type="checkbox" name="group" />
+    <i class="fa fa-users"></i> Group Management
+  </label><br />
+  <label>
+    <input type="checkbox" name="contenttypeusage" />
+    <i class="fa fa-puzzle-piece"></i> Content Type Usage
+  </label><br />
+  <label>
+    <input type="checkbox" name="clearcache" />
+    <i class="fa fa-rotate-right"></i> Clear the Cache
+  </label><br />
+
+  <button type="submit">Save</button>
+</form>
+  <p id="status" style="margin-top: 1rem; color: green;"></p>
+
+  <script src="options.js"></script>
+</body>
+</html>

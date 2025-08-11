@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "T4 Add Toolbar Buttons",
+  "version": "1.9.1",
+  "description": "Adds configurable toolbar icons after the Site Structure icon in Terminalfour.",
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "128": "icon-128.png"
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://t4live.st-andrews.ac.uk/terminalfour/*",
+    "https://www.st-andrews.ac.uk/terminalfour/*",
+    "https://t4dev.st-andrews.ac.uk/terminalfour/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://t4live.st-andrews.ac.uk/terminalfour/*",
+        "https://www.st-andrews.ac.uk/terminalfour/*",
+        "https://t4dev.st-andrews.ac.uk/terminalfour/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_title": "T4 Add Toolbar Buttons"
+  }
+}
